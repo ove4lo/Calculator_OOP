@@ -40,7 +40,7 @@
 
             </Grid.ColumnDefinitions>
 
-        <TextBlock 
+            <TextBlock 
                 x:Name="label" 
                 Grid.Row = "0" Grid.Column = "0" Grid.ColumnSpan = "12"
                 Foreground="White"
@@ -50,203 +50,191 @@
                 TextAlignment="Right"/>
 
             <Button 
-                x:Name="MC_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "1" Grid.Column = "0" Grid.ColumnSpan = "2" 
-                Content = "MC"></Button>
+                Content = "MC"
+                Click="MC_btn"></Button>
             <Button 
-                x:Name="MR_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "1" Grid.Column = "2" Grid.ColumnSpan = "2" 
-                Content = "MR"></Button>
+                Content = "MR"
+                Click="MR_btn"></Button>
             <Button 
-                x:Name="MPlus_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "1" Grid.Column = "4" Grid.ColumnSpan = "2" 
-                Content = "M+"></Button>
+                Content = "M+"
+                Click="MPlus_btn"></Button>
             <Button 
-                x:Name="MMinus_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "1" Grid.Column = "6" Grid.ColumnSpan = "2" 
-                Content = "M-"></Button>
+                Content = "M-"
+                Click="MMinus_btn"></Button>
             <Button 
-                x:Name="MS_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "1" Grid.Column = "8" Grid.ColumnSpan = "2" 
-                Content = "MS"></Button>
+                Content = "MS"
+                Click="MS_btn"></Button>
             <Button 
-                x:Name="MStepMinus_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "1" Grid.Column = "10" Grid.ColumnSpan = "2" 
-                Content = "M^-"></Button>
-
+                Content = "M^-"
+                Click="MStepMinus_btn"></Button>
+        
             <Button 
-                x:Name="procent_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "2" Grid.Column = "0" Grid.ColumnSpan = "3" 
-                Content = "%"></Button>
+                Content = "%"
+                Click="Procent_btn"></Button>
             <Button 
-                x:Name="CE_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "2" Grid.Column = "3" Grid.ColumnSpan = "3" 
-                Content = "CE"></Button>
+                Content = "CE"
+                Click="CE_btn"></Button>
             <Button 
-                x:Name="C_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "2" Grid.Column = "6" Grid.ColumnSpan = "3" 
-                Content = "C"></Button>
+                Content = "C"
+                Click="C_btn"></Button>
             <Button 
-                x:Name="Delete_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "2" Grid.Column = "9" Grid.ColumnSpan = "3" 
-                Content = "delete"></Button>
+                Content = "delete"
+                Click="Delete_btn"></Button>
 
             <Button
-                x:Name="Reverse_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "3" Grid.Column = "0" Grid.ColumnSpan = "3" 
-                Content = "1/x"></Button>
+                Content = "1/x"
+                Click="Reverse_btn"></Button>
             <Button
-                x:Name="Step2_btn"
                 Foreground="White" 
                 Background="#212121"
                 Grid.Row = "3" Grid.Column = "3" Grid.ColumnSpan = "3"  
-                Content = "x^2"></Button>
+                Content = "x^2"
+                Click="Step2_btn"></Button>
             <Button 
-                x:Name="Sqrt_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "3" Grid.Column = "6" Grid.ColumnSpan = "3" 
-                Content = "sqrtx"></Button>
+                Content = "sqrtx"
+                Click="Sqrt_btn"></Button>
             <Button 
-                x:Name="Division_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "3" Grid.Column = "9" Grid.ColumnSpan = "3" 
-                Content = "/"></Button>
+                Content = "/"
+                Click="Divison_btn"></Button>
 
             <Button 
-                x:Name="Num7_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "4" Grid.Column = "0" Grid.ColumnSpan = "3" 
                 Content= "7"
-                ></Button>
+                Click="Num7_btn"></Button>
             <Button 
-                x:Name="Num8_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "4" Grid.Column = "3" Grid.ColumnSpan = "3" 
                 Content = "8"
-                ></Button>
+                Click="Num8_btn"></Button>
             <Button 
-                x:Name="Num9_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "4" Grid.Column = "6" Grid.ColumnSpan = "3" 
                 Content = "9"
-                ></Button>
+                Click="Num9_btn"></Button>
             <Button 
-                x:Name="Multi_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "4" Grid.Column = "9" Grid.ColumnSpan = "3" 
-                Content = "*"></Button>
+                Content = "*"
+                Click="Multi_btn"></Button>
 
             <Button 
-                x:Name="Num4_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "5" Grid.Column = "0" Grid.ColumnSpan = "3" 
                 Content = "4"
-                ></Button>
+                Click="Num4_btn"></Button>
             <Button 
-                x:Name="Num5_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "5" Grid.Column = "3" Grid.ColumnSpan = "3" 
                 Content = "5"
-                ></Button>
+                Click="Num5_btn"></Button>
             <Button 
-                x:Name="Num6_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "5" Grid.Column = "6" Grid.ColumnSpan = "3"
                 Content = "6"
-                ></Button>
+                Click="Num6_btn"></Button>
             <Button 
-                x:Name="Minus_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "5" Grid.Column = "9" Grid.ColumnSpan = "3" 
-                Content = "-"></Button>
+                Content = "-"
+                Click="Minus_btn"></Button>
 
             <Button 
-                x:Name="Num1_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "6" Grid.Column = "0" Grid.ColumnSpan = "3" 
                 Content = "1"
-                ></Button>
+                Click="Num1_btn"></Button>
             <Button 
-                x:Name="Num2_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "6" Grid.Column = "3" Grid.ColumnSpan = "3" 
                 Content = "2"
-                ></Button>
+                Click="Num2_btn"></Button>
 
             <Button 
-                x:Name="Num3_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "6" Grid.Column = "6" Grid.ColumnSpan = "3" 
                 Content = "3"
-                ></Button>
+                Click="Num3_btn"></Button>
             <Button 
-                x:Name="Plus_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "6" Grid.Column = "9" Grid.ColumnSpan = "3" 
-                Content = "+"></Button>
+                Content = "+"
+                Click="Plus_btn"></Button>
 
             <Button 
-                x:Name="PlusMinus_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "7" Grid.Column = "0" Grid.ColumnSpan = "3" 
                 Content = "+/-"
-                ></Button>
+                Click="PlusMinus_btn"></Button>
             <Button 
-                x:Name="Num0_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "7" Grid.Column = "3" Grid.ColumnSpan = "3" 
                 Content = "0"
-                ></Button>
+                Click="Num0_btn"></Button>
             <Button 
-                x:Name="Fraction10_btn"
                 Foreground="White" 
                 Background="#212121" 
                 Grid.Row = "7" Grid.Column = "6" Grid.ColumnSpan = "3" 
                 Content = "."
-                ></Button>
+                Click="Dot_btn"></Button>
             <Button 
-                x:Name="Equals_btn"
                 Foreground="White" 
                 Background="Purple" 
                 Grid.Row = "7" Grid.Column = "9" Grid.ColumnSpan = "3" 
-                Content = "="></Button>
+                Content = "="
+                Click="Equals_btn"></Button>
     </Grid>
 </Window>
