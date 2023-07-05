@@ -116,10 +116,12 @@ namespace Calculator_Simple.Views
             }
             else if (str == "1/x")
             {
-                if (double.TryParse(label.Text, out double num))
+                string y = label.Text.Replace(".", ",");
+
+                if (double.TryParse(y, out double num))
                 {
-                    double x = (1 / Convert.ToDouble(label.Text));
-                    string y = x.ToString();
+                    double x = (1 / Convert.ToDouble(y));
+                    y = x.ToString();
 
                     y = y.Replace(",", ".");
                     label.Text = y;
@@ -128,12 +130,12 @@ namespace Calculator_Simple.Views
             }
             else if (str == "x^2")
             {
+                string y = label.Text.Replace(".", ",");
 
-                if (double.TryParse(label.Text, out double num))
+                if (double.TryParse(y, out double num))
                 {
-                    //label.Text = "543";
-                    double x = Math.Pow(Convert.ToDouble(label.Text), 2);
-                    string y = x.ToString();
+                    double x = Math.Pow(Convert.ToDouble(y), 2);
+                    y = x.ToString();
 
                     y = y.Replace(",", ".");
                     label.Text = y;
@@ -141,10 +143,12 @@ namespace Calculator_Simple.Views
             }
             else if (str == "sqrtx")
             {
-                if (double.TryParse(label.Text, out double num))
+                string y = label.Text.Replace(".", ",");
+
+                if (double.TryParse(y, out double num))
                 {
-                    double x = Math.Pow(Convert.ToDouble(label.Text), 0.5);
-                    string y = x.ToString();
+                    double x = Math.Pow(Convert.ToDouble(y), 0.5);
+                    y = x.ToString();
 
                     y = y.Replace(",", ".");
                     label.Text = y;
@@ -152,12 +156,18 @@ namespace Calculator_Simple.Views
             }
             else if (str == "+/-")
             {
+                string y = label.Text.Replace(".", ",");
 
-                if (double.TryParse(label.Text, out double num))
+                if (double.TryParse(y, out double num))
                 {
-                    double x = Convert.ToDouble(label.Text);
+                    
+                    double x = Convert.ToDouble(y);
                     x = -x;
-                    label.Text = x.ToString();
+                    
+                    y = x.ToString();
+
+                    y = y.Replace(",", ".");
+                    label.Text = y;
 
                 }
             }
