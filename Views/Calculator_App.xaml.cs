@@ -221,7 +221,16 @@ namespace Calculator_Simple.Views
         }
         private void Procent_btn(object sender, RoutedEventArgs e)
         {
-            label.Text += "%";
+            string y = label.Text.Replace(".", ",");
+
+            if (double.TryParse(y, out double num))
+            {
+                double x = Convert.ToDouble(y) / 100;
+                y = x.ToString();
+
+                y = y.Replace(",", ".");
+                label.Text = y;
+            }
         }
         private void Dot_btn(object sender, RoutedEventArgs e)
         {
