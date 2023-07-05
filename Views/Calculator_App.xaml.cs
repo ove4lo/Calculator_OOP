@@ -236,21 +236,5 @@ namespace Calculator_Simple.Views
         {
             label.Text += ".";
         }
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            string str = (string)((Button)e.OriginalSource).Content;
-
-            if (str == "C")
-            {
-                label.Text = "";
-            }
-            else
-            {
-                label.Text += str;
-            }
-
-        }
-
-
     }
 }
